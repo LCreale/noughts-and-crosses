@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.main {
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+}
+
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1 auto;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .main {
+    flex: 3 0px;
+  }
+  .noughts {
+    order: 1;
+  }
+  .main {
+    order: 2;
+  }
+  .crosses {
+    order: 3;
+  }
+  .footer {
+    order: 4;
+  }
+}
+
+#gameboard {
+  width: 300px; 
+  font-size: 3em;
+  margin: auto;
+}
+
+.gamepieces {
+  font-size: 3em;
+}
+
+#gameboard span {
+  width: 100px;
+  height: 100px;
+  float: left;
+  text-align: center;
+}
+
+#one, #four {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+#two, #five {
+  border-bottom: 1px solid black;
+}
+#three, #six {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#seven {
+  border-right: 1px solid black;
+}
+
+#nine {
+  border-left: 1px solid black;
+}

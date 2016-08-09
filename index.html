@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Drag and Drop Noughts &amp; Crosses game in VanillaJS</title>
+        <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+  <header>
+    <h1>Noughts and Crosses</h1>
+    <button id="btn">RESET</button>
+  </header>
+
+  <section class="main">
+    <div id="gameboard">
+      <span id="one" class="droptarget"></span>
+      <span id="two" class="droptarget"></span>
+      <span id="three" class="droptarget"></span>
+      <span id="four" class="droptarget"></span>
+      <span id="five" class="droptarget"></span>
+      <span id="six" class="droptarget"></span>
+      <span id="seven" class="droptarget"></span>
+      <span id="eight" class="droptarget"></span>
+      <span id="nine" class="droptarget"></span>
+    </div>
+  </section>
+
+  <aside class="aside noughts">
+    <h2>Noughts</h2>
+    <p>Wins: 0 | Losses: 0</p>
+    <div class="gamepieces">
+      <div id="noughts">
+        <span id="oh1" draggable="true" class="oh">O</span>
+        <span id="oh2" draggable="true" class="oh">O</span>
+        <span id="oh3" draggable="true" class="oh">O</span><br>
+        <span id="oh4" draggable="true" class="oh">O</span>
+        <span id="oh5" draggable="true" class="oh">O</span>
+        <span id="oh6" draggable="true" class="oh">O</span>
+      </div>
+    </div>
+  </aside>
+
+  <aside class="aside crosses">
+    <h2>Crosses</h2>
+    <p>Wins: 0 | Losses: 0</p>
+    <div class="gamepieces">
+      <div id="crosses">
+        <span id="x1" draggable="true" class="ex">X</span>
+        <span id="x2" draggable="true" class="ex">X</span>
+        <span id="x3" draggable="true" class="ex">X</span><br>
+        <span id="x4" draggable="true" class="ex">X</span>
+        <span id="x5" draggable="true" class="ex">X</span>
+        <span id="x6" draggable="true" class="ex">X</span>
+      </div>
+    </div>
+  </aside>
+
+</div>
+    
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
