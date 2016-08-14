@@ -1,18 +1,23 @@
-//This is the Drag and Drop
+//DRAG AND DROP
 document.ondragstart = function(event) {
-  event.dataTransfer.setData("Text", event.target.id);
+	event.dataTransfer.setData("Text", event.target.id);
 };
+
 document.ondragover = function(event) {
-  event.preventDefault();
+	event.preventDefault();
 };
+
 document.ondrop = function(event) {
-  event.preventDefault();
-  var gamepiece = event.dataTransfer.getData("Text");
-  event.target.appendChild(document.getElementById(gamepiece));
+	event.preventDefault();
+	var gamepiece = event.dataTransfer.getData("Text");
+	event.target.appendChild(document.getElementById(gamepiece));
+	//PREVENT FURTHER DRAG AND DROP
+	document.getElementById(gamepiece).removeAttribute("draggable");
+
 };
 
 //GAME RESET
-
+	//ENTIRE PAGE
 var btn = document.getElementById("btn");
 
 btn.onclick = function() {
@@ -20,6 +25,14 @@ btn.onclick = function() {
 	location.reload();
 };
 
-//GAME LOGIC
+	//ONLY GAMEBOARD
 
-//TBC...
+//GAME LOGIC
+	//NO DOUBLE TURNS - one O, one X, etc.
+
+	//DETERMINE WIN
+
+	//DETERMINE DRAW
+
+//GAME SCORING
+	//COLLECTING WINS AND LOSSES
