@@ -66,24 +66,26 @@ h1 {
   height: 100px;
   float: left;
   text-align: center;
+  padding-top: 10px;
+  overflow: none;
 }
 
 #one, #four {
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
 }
 #two, #five {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
 }
 #three, #six {
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 #seven {
-  border-right: 1px solid black;
+  border-right: 2px solid black;
 }
 
 #nine {
-  border-left: 1px solid black;
+  border-left: 2px solid black;
 }
